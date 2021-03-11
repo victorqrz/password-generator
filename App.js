@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 
+import Slider from '@react-native-community/slider';
+
 export default function App() {
   return(
     <View style={styles.container}>
@@ -9,7 +11,11 @@ export default function App() {
       />
       <Text style={styles.title}>12 caracteres</Text>
       <View style={styles.area}>
-
+        <Slider
+          style={{height: 50}}
+          minimumValue={5}
+          maximumValue={15}
+        />
       </View>
     </View>
   );
